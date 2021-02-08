@@ -3,8 +3,6 @@ package by.abaevtm.tasks.easy;
 
 import org.junit.jupiter.api.Test;
 
-import java.util.Set;
-
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 
@@ -56,7 +54,7 @@ public class IntPalindromeTest {
     @Test
     public void test_custom_2() {
         assertThat(
-                task.solve(345643),
+                task.solve(1000021),
                 is(false)
         );
     }

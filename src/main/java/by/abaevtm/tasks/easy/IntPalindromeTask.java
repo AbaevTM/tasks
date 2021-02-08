@@ -39,7 +39,7 @@ public class IntPalindromeTask implements Task {
         // Second pass over digits - check digits
         int pointerRight = digits.length - 1;
         for (int pointerLeft = 0; pointerLeft <= pointerRight; pointerLeft++) {
-            if (digits[pointerLeft] != 0) {
+            if (digits[pointerLeft] != 0 || pointerRight != digits.length - 1) {
                 if (digits[pointerLeft] != digits[pointerRight]) {
                     return false;
                 } else {
