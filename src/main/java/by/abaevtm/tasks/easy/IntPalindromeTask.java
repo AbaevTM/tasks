@@ -15,10 +15,10 @@ public class IntPalindromeTask implements Task {
 
     @Override
     public Object solve(Object ... args) {
-        return isPalindrome((int) args[0]);
+        return isPalindromeV1((int) args[0]);
     }
 
-    public boolean isPalindrome(int x) {
+    public boolean isPalindromeV1(int x) {
         // Quickly decline all negative numbers
         if (x < 0) {
             return false;
