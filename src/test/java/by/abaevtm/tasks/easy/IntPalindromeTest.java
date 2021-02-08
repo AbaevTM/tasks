@@ -58,4 +58,12 @@ public class IntPalindromeTest {
                 is(false)
         );
     }
+
+    @Test
+    public void test_custom_3() {
+        assertThat(
+                task.solve(0),
+                is(true)
+        );
+    }
 }
