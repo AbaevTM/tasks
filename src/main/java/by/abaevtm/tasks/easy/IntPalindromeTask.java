@@ -2,22 +2,34 @@ package by.abaevtm.tasks.easy;
 
 import by.abaevtm.tasks.Task;
 
+
 /**
  * https://leetcode.com/problems/palindrome-number/
- *
- * Time complexity : O(1)
- * Space complexity : O(1)
- *
- * Two passes : over digits knowing that we are limited by 10 digits per int, second over digits for final check
- *
  */
 public class IntPalindromeTask implements Task {
 
     @Override
-    public Object solve(Object ... args) {
-        return isPalindromeV1((int) args[0]);
+    public Object solve(Object... args) {
+        return isPalindromeV2((int) args[0]);
     }
 
+    public boolean isPalindromeV2(int x) {
+        return false;
+    }
+
+    /**
+     * Time complexity : O(1) Space complexity : O(1)
+     * <p>
+     * Two passes : over digits knowing that we are limited by 10 digits per int, second over digits for final check
+     * <p>
+     * UPD : actually 0(1) is pretty high in that case. As number of digits is ~ log10N <= for integer it looks cool on
+     * paper but O(logN) is more desirable in this case.
+     * <p>
+     * Also with unbounded types like {@link java.math.BigDecimal} the idea is not working completely.
+     *
+     * @param x
+     * @return
+     */
     public boolean isPalindromeV1(int x) {
         // Quickly decline all negative numbers
         if (x < 0) {
