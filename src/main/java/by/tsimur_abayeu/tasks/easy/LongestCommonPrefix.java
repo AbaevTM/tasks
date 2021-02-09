@@ -14,6 +14,7 @@ import java.util.List;
  * <p>
  * But if you need it to be executed multiple times there's nice idea about using trie : at the end of :
  * https://leetcode.com/problems/longest-common-prefix/solution/
+ * 
  */
 public class LongestCommonPrefix implements Task {
 
