@@ -3,8 +3,6 @@ package by.tsimur_abayeu.tasks.easy;
 
 import org.junit.jupiter.api.Test;
 
-import java.util.List;
-
 import static java.util.List.of;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
@@ -12,7 +10,7 @@ import static org.hamcrest.Matchers.is;
 
 public class LongestCommonPrefixTest {
 
-    private LongestCommonPrefix task = new LongestCommonPrefix();
+    private LongestCommonPrefixTask task = new LongestCommonPrefixTask();
 
     @Test
     public void test_provided_1() {
